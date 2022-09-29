@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block mainBody %}
+<div style="padding: 5em 5em 5em 5em">
+    {% for topic in topics %}
+        <a href="topic/{{topic.id}}">{{ topic }}</a>
+    {% endfor %}
+</div>
+{% endblock mainBody %}

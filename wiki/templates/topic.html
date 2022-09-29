@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block mainBody %}
+<div style="padding: 5em 5em 5em 5em">
+    <p>
+      {{ topic.name }}
+    </p>
+    <p>
+      {{ topic.updated }}
+    </p>
+    <ul>
+        {% for section in sections %}
+            <li> {{ section }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock mainBody %}
